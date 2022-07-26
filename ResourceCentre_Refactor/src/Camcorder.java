@@ -12,7 +12,7 @@ public class Camcorder extends Item{
 	}
 	
 	public String toString(){
-<<<<<<< HEAD
+<<<<<<< HEADff
 =======
 		String output = super.toString();
 >>>>>>> branch 'master' of https://github.com/21012569-ElsonLim/ResourceCentre_Refractor.git
