@@ -13,12 +13,21 @@ public class Item {
 	}
 	public String toString() {
 		// Write your codes here
+<<<<<<< HEAD
 		String itemInfo = String.format("%-10s %-30s %-10s %-10s",
 				assetTag,
 				description, 
 				showAvailability(isAvailable),
 				dueDate);
 		return itemInfo;
+=======
+		String output = String.format("%-10s %-30s %-10s %-10s",
+				assetTag,
+				description, 
+				showAvailability(isAvailable),
+				dueDate);
+		return output;
+>>>>>>> branch 'master' of https://github.com/21012569-ElsonLim/ResourceCentre_Refractor.git
 	}
 	
 	public String showAvailability(boolean isAvailable) {
@@ -54,6 +63,17 @@ public class Item {
 
 	public void setIsAvailable(boolean isAvailable) {
 		this.isAvailable = isAvailable;
+	}
+	
+	public String showAvailability(boolean isAvailable) {
+		String avail;
+
+		if (isAvailable == true) {
+			avail = "Yes";
+		} else {
+			avail = "No";
+		}
+		return avail;
 	}
 }
 

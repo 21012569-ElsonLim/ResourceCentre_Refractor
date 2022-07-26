@@ -3,11 +3,20 @@ import java.util.ArrayList;
 public class ResourceCentre {
 
 
+<<<<<<< HEAD
 	private static final int OPTION_RETURN = 4;
 	private static final int OPTION_LOAN = 3;
 	private static final int OPTION_ADD = 2;
 	private static final int OPTION_VIEW = 1;
 	private static final int OPTION_QUIT = 5;
+=======
+	private static final int OPTION_QUIT = 5;
+	private static final int OPTION_RETURN = 4;
+	private static final int OPTION_LOAN = 3;
+	private static final int OPTION_ADD = 2;
+	private static final int OPTION_VIEW = 1;
+	
+>>>>>>> branch 'master' of https://github.com/21012569-ElsonLim/ResourceCentre_Refractor.git
 	public static void main(String[] args) {
 
 		ArrayList<Camcorder> camcorderList = new ArrayList<Camcorder>();
@@ -19,7 +28,11 @@ public class ResourceCentre {
 		chromebookList.add(new Chromebook("CB002", "HP Chromebook", "Win 10"));
 
 		int option = 0;
+<<<<<<< HEAD
 
+=======
+//Demo CI/CD
+>>>>>>> branch 'master' of https://github.com/21012569-ElsonLim/ResourceCentre_Refractor.git
 		while (option != OPTION_QUIT) {
 
 			ResourceCentre.menu();
@@ -150,6 +163,7 @@ public class ResourceCentre {
 		}
 		return output;
 	}
+	
 	public static void viewAllChromebook(ArrayList<Chromebook> chromebookList) {
 		
 		ResourceCentre.setHeader("CHROMEBOOK LIST");
@@ -299,7 +313,7 @@ public class ResourceCentre {
 				chromebookList.get(i).setIsAvailable(true);
 				chromebookList.get(i).setDueDate("");
 				isReturned = true;
-				
+			
 			}
 		}
 		return isReturned;
