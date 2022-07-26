@@ -122,16 +122,6 @@ public class ResourceCentre {
 		Helper.line(80, "-");
 	}
 
-	public static String showAvailability(boolean isAvailable) {
-		String avail;
-
-		if (isAvailable == true) {
-			avail = "Yes";
-		} else {
-			avail = "No";
-		}
-		return avail;
-	}
 
 	//================================= Option 1 View (CRUD - Read) =================================
 	public static String retrieveAllCamcorder(ArrayList<Camcorder> camcorderList) {
